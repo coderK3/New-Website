@@ -3,3 +3,28 @@ body {
   margin: 0px;
   box-sizing: border-box;
 }
+ nav {
+ text-align:center;
+ }
+ footer {
+  position: absolute;
+  bottom:0px;
+ }
+ section {
+   text-align:center;
+ }
+ nav a {
+    margin: .75em;
+    display: inline-block;
+ }
+ nav {
+    text-align: center;
+    font-weight: bold;
+    padding:3em;
+ }
+ section {
+ position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+ }
