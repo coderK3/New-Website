@@ -1,30 +1,78 @@
-body {
-  padding:0px;
-  margin: 0px;
-  box-sizing: border-box;
+html,body,.container {
+  height: 100%;
 }
- nav {
- text-align:center;
- }
- footer {
-  position: absolute;
-  bottom:0px;
- }
- section {
-   text-align:center;
- }
- nav a {
-    margin: .75em;
-    display: inline-block;
- }
- nav {
-    text-align: center;
-    font-weight: bold;
-    padding:3em;
- }
- section {
- position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
- }
+
+body {
+  background: black;
+  color: white;
+  padding: 0em;
+  margin: 0em;
+  font-family: sans-serif;
+  background: black url(../images/bg.gif) no-repeat fixed center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.container .nav {
+  padding: .5em;
+}
+
+.container .nav .link {
+  display: inline-block;
+  padding: .75em;
+  margin: .75em;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container .nav .active {
+  outline: .15em solid white;
+}
+
+.container .nav .link:hover {
+  outline: .15em solid gray;
+  color:gray;
+}
+
+.container .content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .content .logo {
+  border:.15em solid white;
+  padding: .75em;
+  margin: .75em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.container .content .heading {
+  font-size:1.75em;
+}
+
+.text-small {
+  font-size: 75%;
+}
+
+@media only screen and (min-width: 768px) {
+  .text-small {
+    font-size: 100%;
+  }
+  .container .content .heading, {
+    font-size: 2.5em;
+  }
+  .container .content .logo {
+    font-size:1.25em;
+  }
+}
