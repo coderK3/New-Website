@@ -1,0 +1,102 @@
+input,
+textarea,
+iframe {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+textarea {
+    font: inherit;
+    resize: none;
+    height: 7.5em;
+}
+
+iframe {
+    height: 100%;
+}
+
+.contact,
+form,
+.frame {
+    margin: 1em;
+}
+
+input,
+textarea,
+button {
+    background: #ECEFF1;
+    color: black;
+    padding: .5em;
+    margin: .25em 0;
+    border: none;
+}
+
+input:focus,
+textarea:focus,
+button:hover,
+.frame {
+    -webkit-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+    -webkit-box-shadow: 0 2px 10px black;
+    box-shadow: 0 2px 10px black;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+    transition: .4s all;
+    background-color: #90A4AE;
+}
+
+.social-nav i:hover {
+    text-shadow: 0 0 5px black;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
+    color: #90A4AE;
+}
+
+.social-nav {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.social-nav i {
+    padding: .5em;
+}
+
+.contact-heading {
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+
+.contact p {
+    font-size: 70%;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact {
+        text-align: left;
+    }
+    .top {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin: 5em 0;
+    }
+    form,
+    .contact {
+        width: 25em;
+    }
+    .frame {
+        margin: 5em 0;
+        height: 30em;
+    }
+    .social-nav {
+        font-size: 2em;
+    }
+    .contact p {
+        font-size: 90%;
+    }
+}
